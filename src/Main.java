@@ -7,6 +7,8 @@ public class Main {
         //--> Collection Interface
         Collection arr = new ArrayList<>();
 
+//--------------------------------------------------------------------------------------------------------------//
+
             //--> ArrayList implementation
 
         ArrayList<Integer> arrList = new ArrayList<>();
@@ -32,6 +34,9 @@ public class Main {
         Collections.sort(arrList);
         System.out.println(arrList);
 
+
+//--------------------------------------------------------------------------------------------------------------//
+
             //--> ArrayList with user defined class variables
 
         ArrayList<Parent> classArray = new ArrayList<Parent>();
@@ -49,7 +54,7 @@ public class Main {
             System.out.println( ( (Parent)ite2.next() ).b );
         }
 
-        // child class access by parent object ArrayList
+            // child class access by parent object ArrayList in extends Parent class
 
         ArrayList<Parent> a = new ArrayList<Parent>(); // new array using Parent class object Generics
 
@@ -65,10 +70,13 @@ public class Main {
             System.out.println( ( (Child)i.next() ).a );
         }
 
+//--------------------------------------------------------------------------------------------------------------//
 
+            //--> LinkedList implementation
 
+        LinkedList<String> list2 = new LinkedList<String>();
 
-
+        
 
 
 
