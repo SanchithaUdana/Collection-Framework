@@ -74,7 +74,41 @@ public class Main {
 
             //--> LinkedList implementation
 
+                // we can use LinedList as a Stack or Queue
+                    // in Stack -- >  we can add data using # push command or # add command
+                        // and we can remove data from Stack using # pop command
+                    // in Queue -- >  we can add data using # offer command or # add command
+                        // and we can remove data from Queue using # poll command
+
         LinkedList<String> list2 = new LinkedList<String>();
+
+        list2.add("chamara");
+        list2.add("kawindu");
+        list2.add("zara");
+        list2.push("Chamara");
+        list2.offer("kamal");
+
+        System.out.println(list2);
+
+        Iterator<String> ii = list2.iterator();
+        while (ii.hasNext()){
+            System.out.println(ii.next());
+        }
+
+//--------------------------------------------------------------------------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         
 
