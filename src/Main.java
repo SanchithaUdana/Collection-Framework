@@ -432,7 +432,7 @@ public class Main {
 
         udana.put(1,"wes");
         udana.put(3,"awed");
-        udana.put(2,"frec");
+        udana.put(2,"fr");
         udana.put(8,"sds");
 
         System.out.println(udana);
@@ -459,6 +459,8 @@ public class Main {
 //--------------------------------------------------------------------------------------------------------------//
 
 
+
+    // 2023.01.03 - Created by Sanchitha Udana Wijesundara
 
 
 
