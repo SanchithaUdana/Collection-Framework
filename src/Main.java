@@ -398,6 +398,67 @@ public class Main {
 
 //--------------------------------------------------------------------------------------------------------------//
 
+            //--> Map Interface
+                // we can create object without generics or with generics
+        // #############
+
+            // --> HashMap
+
+                // HashMap contains values based on the key
+                // contains only unique keys
+                // can use only one null key and can use multiple null elements
+                // no order maintain
+                // non synchronized - not rearrange elements
+                // duplicate element
+
+        HashMap<Integer,String> san = new HashMap<>();
+
+        san.put(1,"wm");
+        san.put(3,"we");
+        san.put(5,"dser");
+        san.put(2,"derw");
+
+        System.out.println(san);
+
+
+//--------------------------------------------------------------------------------------------------------------//
+
+            //--> LinkedHashMap
+
+                // same attributes are available for this
+                // elements ordered inserting order
+
+        LinkedHashMap <Integer,String> udana = new LinkedHashMap <Integer, String> ();
+
+        udana.put(1,"wes");
+        udana.put(3,"awed");
+        udana.put(2,"frec");
+        udana.put(8,"sds");
+
+        System.out.println(udana);
+
+
+//--------------------------------------------------------------------------------------------------------------//
+
+            //-- TreeMap
+                // can not be null key
+                // but can allow multiple null elements
+                // A - Z order flowed
+
+        TreeMap tree = new TreeMap();
+
+        tree.put(1,12);
+        tree.put(10,2314);
+        tree.put(2,1243);
+        tree.put(5,2312);
+
+        System.out.println(tree);
+
+
+
+//--------------------------------------------------------------------------------------------------------------//
+
+
 
 
 
