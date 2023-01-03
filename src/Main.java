@@ -24,7 +24,7 @@ public class Main {
         System.out.println(arrList.size());
 
         // remove a item from the arrayList
-        //arr.remove(1);
+        arrList.remove(1);
 
         // create object using Iterator interface
         Iterator ite = arrList.iterator();
