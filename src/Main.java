@@ -89,16 +89,38 @@ public class Main {
         list2.push("Chamara");
         list2.offer("kamal");
 
+        // print the LinkedList
         System.out.println(list2);
 
+        // sort the linkedList values
+        // firstly sorted Capital letters and after sort simple letters
+        Collections.sort(list2);
+
+        list2.remove();  // without index. remove the first element in the LinkedList
+
+        list2.remove(1);    // we can remove elements using their index
+
+        System.out.println("First item : " + list2.getFirst());  // get the first item in LinkedList
+        System.out.println("Last item : " + list2.getLast());    // get the last item in LinkedList
+
+        // get the item at top of the LinkedList
+        System.out.println(list2.peek());
+
+        // check the value is available in LinkedList
+        System.out.println(" is has this : " + list2.contains("chamara"));
+        System.out.println(list2);
+
+        // print the LinkedList value one by one using Iterator
         Iterator<String> ii = list2.iterator();
         while (ii.hasNext()){
             System.out.println(ii.next());
         }
 
+
 //--------------------------------------------------------------------------------------------------------------//
 
 
+            // --> 
 
 
 
