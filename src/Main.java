@@ -333,9 +333,84 @@ public class Main {
 
 //--------------------------------------------------------------------------------------------------------------//
 
-        //--> Set Interface
+            //--> Set Interface
+                // can not use duplicate element
+                // can use only one null value
+                        // HashSet
+                        // LinkedHashSet
+                        // TreeSet
 
-            // can use only one null value
+        //-->  HashSet
+
+            // implemented from set interface
+            // can not decide printing order
+
+        HashSet<Integer> hset = new HashSet<>();
+
+        // add element to HashSet
+        hset.add(400);
+        hset.add(200);
+        hset.add(300);
+        hset.add(100);
+        hset.add(100);
+
+        System.out.println(hset);
+
+        // print the elements one by one using Iterator method
+        Iterator <Integer> hi = hset.iterator();
+        while(hi.hasNext()){
+            System.out.println(hi.next());
+        }
+
+
+//--------------------------------------------------------------------------------------------------------------//
+
+            // --> LinkedHashSet
+                // element access input order
+
+        LinkedHashSet<String> lhs = new LinkedHashSet<>();
+
+        // add element using add command
+        lhs.add("B");
+        lhs.add("A");
+        lhs.add("Z");
+
+        System.out.println(lhs);
+
+
+//--------------------------------------------------------------------------------------------------------------//
+
+            //--> TreeSet
+                // access by as ordered list
+
+        TreeSet <Integer> tset = new TreeSet<>();
+        // add element to the TreeSet
+        tset.add(1);
+        tset.add(100);
+        tset.add(0);
+
+        System.out.println("TreeSet Element printing : " + tset);
+
+        Iterator <Integer> www = tset.iterator();
+        while(www.hasNext()){
+            System.out.println(www.next());
+        }
+
+//--------------------------------------------------------------------------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
