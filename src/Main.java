@@ -11,8 +11,10 @@ public class Main {
 //--------------------------------------------------------------------------------------------------------------//
 
             //--> ArrayList implementation
+                // used dynamical arrayList
 
         ArrayList<Integer> arrList = new ArrayList<>();
+
         arrList.add(100);
         arrList.add(200);
         arrList.add(200);
@@ -75,7 +77,7 @@ public class Main {
 //--------------------------------------------------------------------------------------------------------------//
 
             //--> LinkedList implementation
-
+                    // used doubly linkedList
                 // we can use LinedList as a Stack or Queue
                     // in Stack -- >  we can add data using # push command or # add command
                         // and we can remove data from Stack using # pop command
@@ -87,21 +89,21 @@ public class Main {
         list2.add("chamara");
         list2.add("kawindu");
         list2.add("zara");
-        list2.push("Chamara");
-        list2.offer("kamal");
+        list2.add("Chamara");
+        list2.add("kamal");
 
         // print the LinkedList
         System.out.println(list2);
 
-        // sort the linkedList values
-        // firstly sorted Capital letters and after sort simple letters
-        Collections.sort(list2);
-
-        list2.remove();  // without index. remove the first element in the LinkedList
-        list2.remove(1);    // we can remove elements using their index
+        //list2.remove();  // without index. remove the first element in the LinkedList
+        //list2.remove(1);    // we can remove elements using their index
 
         System.out.println("First item : " + list2.getFirst());  // get the first item in LinkedList
         System.out.println("Last item : " + list2.getLast());    // get the last item in LinkedList
+
+        // sort the linkedList values
+        // firstly sorted Capital letters and after sort simple letters
+        Collections.sort(list2);
 
         // get the item at top of the LinkedList
         System.out.println(list2.peek());
@@ -120,7 +122,78 @@ public class Main {
 //--------------------------------------------------------------------------------------------------------------//
 
 
-            // --> 
+            // --> Stack Data Structure -  Last in first out
+
+        Stack<Integer> ss = new Stack<Integer>();
+        boolean result = ss.empty();
+        System.out.println("Is Stack empty before adding values : "+result);
+
+        // add values to Stack using push command
+        ss.push(123);
+        ss.push(243);
+        ss.push(100);
+        ss.push(300);
+
+        // print the current Stack
+        System.out.println(ss);
+        // print tha top of element in tha Stack
+        System.out.println(ss.peek());
+
+        // remove top of elements using pop command
+        ss.pop();
+        ss.pop();
+
+        // print the Stack after pop command
+        System.out.println(ss);
+        // print the top of element after the pop command
+        System.out.println(ss.peek());
+
+
+//--------------------------------------------------------------------------------------------------------------//
+
+            // --> Double Embed Queue - Deque  (   first in first out   )
+
+                // null element can not be allowed
+                // duplicate values can be allowed
+                // can remove and ad value top and the bottom sides
+                // we can use stack functions too
+                // push , pop , offer , poll and related functions to them
+
+        ArrayDeque<Integer> dd = new ArrayDeque<>();
+
+        // add value to ArrayDeque
+        dd.add(5);
+        dd.add(10);
+        dd.add(34);
+        dd.add(14);
+        System.out.println(dd);
+
+        // add element to front
+        dd.addFirst(1);
+        // add element to rear
+        dd.addLast(100);
+
+        System.out.println(dd);
+
+        // print first element from the Deque
+        System.out.println(dd.getFirst());
+        // print last element from the Deque
+        System.out.println(dd.getLast());
+
+        dd.remove();      // remove the first element in default
+        dd.removeFirst(); // remove the first element too
+        dd.removeLast();  // remove last element in Deque
+        System.out.println(dd);
+
+//--------------------------------------------------------------------------------------------------------------//
+
+            //--> Set Interface
+
+                // can use only one null value
+
+
+
+
 
 
 
