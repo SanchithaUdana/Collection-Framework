@@ -326,6 +326,8 @@ public class Main {
         // remove last and first value
         linked1.removeFirst();
         linked1.removeLast();
+        // we can use remove function to remove first element
+        linked1.remove();
         System.out.println(linked1);
 
 
