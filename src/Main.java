@@ -107,7 +107,7 @@ public class Main {
         System.out.println(list2.peek());
 
         // check the value is available in LinkedList
-        System.out.println(" is has this : " + list2.contains("chamara"));
+        System.out.println("is has this : " + list2.contains("chamara"));
         System.out.println(list2);
 
         // print the LinkedList value one by one using Iterator
