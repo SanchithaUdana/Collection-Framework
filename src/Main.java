@@ -64,6 +64,7 @@ public class Main {
 
         a.add(c1);  // add c1 object to a ArrayList
         a.add(c2);  // add c2 object to a ArrayList
+
             // Iterator using to print item one by one in ArrayList
         Iterator i = a.iterator();
         while (i.hasNext()){
@@ -97,7 +98,6 @@ public class Main {
         Collections.sort(list2);
 
         list2.remove();  // without index. remove the first element in the LinkedList
-
         list2.remove(1);    // we can remove elements using their index
 
         System.out.println("First item : " + list2.getFirst());  // get the first item in LinkedList
